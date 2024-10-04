@@ -1,0 +1,145 @@
+body, html {
+  background-color: #cfcfcfa3;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body {
+  display: block; 
+}
+
+h1, h5 {
+  margin: 0;
+}
+
+footer {
+  background-color: #200e38;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+
+}
+
+.color1 {
+    background-color: #0A1B39;
+  }
+  
+  .color2 {
+    background-color: #2C1A45;
+  }
+  
+  .color3 {
+    background-color: #00FF85;
+  }
+  
+  .color4 {
+    background-color: #00CFFF;
+  }
+  
+  .color5 {
+    background-color: #7A7F84;
+  }
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .container {
+    flex-grow: 1;
+  }
+  
+
+  /* Estilos para los botones de volver al inicio */
+  .btn-morado {
+    background-color: #9255e7;
+    color: white;
+  }
+
+  .btn-morado:hover {
+    background-color: #ad0d25;
+    color: white;
+  }
+
+
+   /* Estilos para las instrucciones */
+   .instructions {
+    background-color: #f9f9f9;
+    border-left: 5px solid #6a0dad;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .instructions p {
+    margin-bottom: 10px;
+  }
+
+  .instructions ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .instructions ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .instructions ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #6a0dad;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .instructions strong {
+    color: #6a0dad;
+  }
+  
+  .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+
+    .form-container-cifrado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px; 
+      margin-bottom: 40px; 
+    }
+
+  
+
+  

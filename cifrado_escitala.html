@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado Escítala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+  
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="color2 text-white py-4 d-flex justify-content-between align-items-center px-4">
+    <div>
+      <h1 class="mb-0">Cifrado Escítala</h1>
+    </div>
+    <div>
+        <a href="index.html" class="btn btn-morado">Volver al Inicio</a>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h3 class="text-center">Cifrar/Descifrar con Cifrado Escítala</h3>
+
+        <!-- Instrucciones -->
+        <div class="instructions">
+          <p><strong><i class="bi bi-info-circle"></i> Instrucciones:</strong></p>
+          <p>El <strong>Cifrado Escítala</strong> utiliza un método de transposición en el que se organiza el mensaje en un número determinado de columnas. Para utilizarlo:</p>
+          <ul>
+            <li>Ingresa el mensaje que deseas cifrar o descifrar.</li>
+            <li>Introduce el número de columnas, que debe ser un número entero positivo.</li>
+            <li>Selecciona si deseas cifrar o descifrar el mensaje.</li>
+            <li>Haz clic enㅤ<strong>Ejecutar</strong>ㅤpara ver el resultado.</li>
+          </ul>
+        </div>
+
+        <!-- Formulario -->
+        <form id="escitala-form">
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+            <div id="message-error" class="error"></div>
+          </div>
+          <div class="mb-3">
+            <label for="columns" class="form-label">Número de columnas:</label>
+            <input type="number" class="form-control" id="columns" required>
+            <div id="columns-error" class="error"></div>
+          </div>
+          <div class="mb-3">
+            <label for="operation" class="form-label">Operación:</label>
+            <select class="form-control" id="operation" required>
+              <option value="encrypt">Cifrar</option>
+              <option value="decrypt">Descifrar</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Ejecutar</button>
+        </form>
+
+        <div class="mt-4">
+          <h5>Resultado:</h5>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="color1 text-white text-center py-3">
+    <p>Elaborado por Carlos Francisco García Flores</p>
+  </footer>
+
+  <script src="./Js/escitala.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
